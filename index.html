@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>景点便民设施RBTNet冗余检测</title>
+    <link rel="stylesheet" href="assets/css/style-liberty.css">
+</head>
+
+<body>
+    <!--/Header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1><a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
+                        河<span class="sublog">图</span>
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">搜索</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">社区</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">个人</a>
+                        </li>
+
+                    </ul>
+                    <ul class="navbar-nav search-right mt-lg-0 mt-2">
+                        <li class="nav-item mr-2" title="Search"><a href="#search" class="search-search">
+                                <span class="fas fa-search" aria-hidden="true"></span></a></li>
+                        <li class="nav-item mx-lg-4"><p class="phone-btn btn-white d-none d-lg-block btn-style ms-2 "><span class="fas fa-user me-2" aria-hidden="true"></span> <button onclick="popDiv()" id="popLayer" >用户登录</button></p></li>
+                    </ul>
+                   
+                    <!-- //toggle switch for light and dark theme -->
+                    <!-- search popup -->
+                    <div id="search" class="w3lpop-overlay">
+                        <div class="w3lpopup">
+                            <form action="#formsearch" method="GET" class="d-flex">
+                                <input type="search" placeholder="Search.." name="search" required="required" autofocus>
+                                <button type="submit"><span class="fas fa-search"></span></button>
+                                <a class="close" href="#formsearch">&times;</a>
+                            </form>
+                        </div>
+                    </div>
+                   
+                    <!-- /search popup -->
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <div id="popDiv">
+        <div class="close">
+            <a href="javascript:void(0)" onclick="closePop()">关闭</a>
+        </div>
+        <p><img src="./assets/images/login.png" alt="" style="width: 30rem; height: 40rem;"></p>
+    </div>
+    <!--//Header-->
+    <!-- main-slider -->
+    <section class="w3l-main-slider banner-slider" id="home">
+        <div class="owl-one owl-carousel owl-theme">
+            <div class="item">
+                <div class="slider-info banner-view banner-top1">
+                    <div class="container">
+                        <div class="banner-info">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 头部轮播图文字 -->
+            <div class="item">
+                <div class="slider-info banner-view banner-top2">
+                    <div class="container">
+                        <div class="banner-info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-info banner-view banner-top3">
+                    <div class="container">
+                        <div class="banner-info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-info banner-view banner-top4">
+                    <div class="container">
+                        <div class="banner-info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /main-slider -->
+    
+    <!--/about-section-->
+    <section class="w3l-index2" id="about">
+        <div class="midd-w3 py-5">
+            <div class="container py-md-5 py-3">
+                <!--/row-1-->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="w3shape position-relative">
+                            <img src="assets/images/ab1.jpg" alt="" class="radius-image img-fluid" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4 align-self ps-lg-5">
+                        <div class="title-content text-left">
+                            <h6 class="title-subhny mb-2"><span>关于我们</span></h6>
+                        </div>
+                        <p class="mt-md-4 mt-3">专注于提供景点便民设施定位服务，提高人民幸福生活指数</p>
+                        <div class="w3l-two-buttons">
+                            <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4">了解更多 <span class="fas fa-angle-double-right ms-2"></span></a>
+                            <a href="#view" class="btn btn-outline-primary btn-style mt-lg-5 mt-4 ms-2"> 使用服务<span class="fas fa-angle-double-right ms-2"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--//row-1-->
+            </div>
+        </div>
+    </section>
+    <!--//about-section-->
+    <section class="w3l-video-sec" id="video">
+        <div class="container">
+            <div class="w3l-index5 py-5" id="video">
+                <div class="history-info align-self text-center py-5 my-lg-5">
+                    <div class="position-relative py-5 my-lg-5">
+                        
+                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                        <div id="small-dialog1" class="zoom-anim-dialog mfp-hide">
+                            <iframe src="#" sandbox="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/grids-->
+    <section class="w3l-grids-3 home-page-gds py-5">
+        <div class="container py-md-5 py-3">
+            <div class="header-sec text-center pt-lg-5 mt-lg-5">
+                <h3 class="title-w3l two mb-4 mt-lg-5">研究现状
+                </h3>
+            </div>
+        </div>
+    </section>
+    <!--//grids-->
+
+    <!--/tabs-faqs-->
+    <section class="w3l-products w3l-faq-block py-5" id="projects">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="row ">
+                <div class="col-lg-6 mx-auto pe-lg-5">
+                    <h6 class="title-subhny mb-2"><span>优势介绍</span></h6>
+                    <h3 class="title-w3l mb-lg-5 mb-4">便民设施
+                        <span class="span-bold">RBTNet</span>
+                        冗余检测
+                    </h3>
+                    <!--Horizontal Tab-->
+                    <div id="parentHorizontalTab">
+                        <ul class="resp-tabs-list hor_1 mb-2">
+                            <li>开发背景</li>
+                            <li>算法介绍</li>
+                            <li>项目现状</li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="resp-tabs-container hor_1">
+                            <div class="products-content">
+                                <h5 class="head">旅游热度居高不下，社会对景点便民设施需求逐渐升高。</h5>
+                                <p>《国内旅游提升计划》中指出要提升旅游公共服务效能，坚持以改革创新成效激发国内旅游活力。
+                                    因此，旅游景点便民设施建设成为当今旅游业发展的重点方向之一。
+                                </p>
+                                <ul class="w3l-right-book mt-4">
+                                    <li><span class="fa fa-check" aria-hidden="true"></span>景区地图中便民设施位置无法及时更新</li>
+                                    <li><span class="fa fa-check" aria-hidden="true"></span>现存对旅游景点便民设施进行标注的技术仍有很大不足</li>
+                                </ul>
+                            </div>
+                            <div class="products-content">
+                                <h5 class="head">去除其中冗余标注的信息，优化数据</h5>
+                                <p>采用以Transformer、Bert、ResNet-152为主干网络的RBTNET模型对旅游景点便民设施标注的多模态数据进行分析</p>
+                                <ul class="w3l-right-book mt-4">
+                                    <li><span class="fa fa-check" aria-hidden="true"></span>基于Transformer的表征学习</li>
+                                    <li><span class="fa fa-check" aria-hidden="true"></span>基于Bert文字特征学习</li>
+                                    <li><span class="fa fa-check" aria-hidden="true"></span>残差网络</li>
+
+                                </ul>
+                            </div>
+                            <div class="products-content">
+                                <h5 class="head">旅游景点便民设施冗余标记检测系统 </h5>
+                                <p>以Web网页为载体，实现旅游景点便民设施冗余标记的数据检测以及旅游景点便民设施在地图上的标识。</p>
+                                <ul class="w3l-right-book mt-4">
+                                    <li><span class="fa fa-check" aria-hidden="true"></span>前端界面开发</li>
+                                    <li><span class="fa fa-check" aria-hidden="true"></span>后端框架搭建</li>
+                                    <li><span class="fa fa-check" aria-hidden="true"></span>人工智能接口的实现</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-sm-5 mt-4">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="true"><span class="accordion-title">RBTNET网络</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>将Transformer、Bert、ResNet-152结合形成一个RBTNET网络，对大量的旅游景点便民设施的标记数据进行冗余检测，提出一种可以适配旅游景点便民设施标记中的冗余数据的检测的方法。</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">多模态技术</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>使用具有不同模式的编码器进行特征提取，运用多模态的技术，整合了来自各种形式的数据，从而有助于产生更可靠的预测。</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">冗余数据</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>将旅游景点便民设施标注的问题与多模态技术相结合，尝试以不同的角度去解决旅游景点便民设施标注中存在的冗余数据的问题，通过人工智能技术构建一个旅游景点地图平台助力我国旅游景点环境的建设。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//tabs-faqs-->
+    <!--/w3l-project-->
+    <section class="w3l-project-main pb-md-0">
+        <div class="container">
+            <div class="w3l-project p-md-5 p-4 px-4">
+                <div class="row py-lg-4 px-lg-2 align-items-center">
+                    <div class="col-lg-8 w3l-project-right">
+                        <div class="bottom-info">
+                            <div class="header-section pr-lg-5">
+                                <h3 class="title-w3l two"> <span class="span-bold">Lets Do It!</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 w3l-project-left mt-lg-0 mt-4">
+                        <a href="#" class="btn btn-secondary btn-style"> 了解更多<span class="fas fa-angle-double-right ms-2"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//w3l-project-->
+	<div style="margin: 8px auto; display: block; text-align:center;">
+
+<!---728x90--->
+
+</div>
+    <!--/blogs-grids-->
+    <!--//blogs-grids->
+	<div style="margin: 8px auto; display: block; text-align:center;">
+
+<--728x90--->
+ 
+</div>
+	<div style="margin: 8px auto; display: block; text-align:center;">
+
+<!---728x90--->
+ 
+</div>
+    <!-- testimonials -->
+    <!-- //testimonials -->
+    <!--/w3l-footer-29-main-->
+    <!--//footer-9 -->
+    <!-- Js scripts -->
+    <!-- Template JavaScript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/theme-change.js"></script>
+    <!-- Lightbox --
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/simpleLightbox.js"></script>
+    <script>
+        $('.w3layouts_gallery_grid a').simpleLightbox();
+
+    </script>
+    <-- //Lightbox -->
+    <script src="assets/js/jquery-1.9.1.min.js"></script>
+    <!-- faq -->
+    <script>
+        const items = document.querySelectorAll(".accordion button");
+
+        function toggleAccordion() {
+            const itemToggle = this.getAttribute('aria-expanded');
+
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute('aria-expanded', 'false');
+            }
+
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+    </script>
+    <!-- //faq -->
+    <script src="assets/js/easyResponsiveTabs.js"></script>
+    <!--Plug-in Initialisation-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //Horizontal Tab
+            $('#parentHorizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                tabidentify: 'hor_1', // The tab groups identifier
+                activate: function(event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#nested-tabInfo');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+        });
+
+    </script>
+    <script src="assets/js/circles.js"></script>
+    <!-- owlcarousel -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <!-- script for banner slider-->
+    <script>
+        $(document).ready(function() {
+            $('.owl-one').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    480: {
+                        items: 1
+                    },
+                    667: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        })
+
+    </script>
+    <!-- //script -->
+    <!-- script for tesimonials carousel slider -->
+    <script>
+        $(document).ready(function() {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                margin: 200,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 2,
+                        nav: false,
+                        margin: 30,
+                        loop: false
+                    }
+                }
+            })
+        })
+
+    </script>
+    <!-- //script for tesimonials carousel slider -->
+    <!-- video popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+            $('.popup-with-move-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-slide-bottom'
+            });
+        });
+
+    </script>
+    <!-- //video popup -->
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function() {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function() {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function() {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function() {
+            $('.navbar-toggler').click(function() {
+                $('body').toggleClass('noscroll');
+            })
+        });
+
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!-- //bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script>
+       function popDiv(){
+            // 获取div元素
+            var popBox = document.getElementById("popDiv");
+            var popLayer = document.getElementById("popLayer");
+
+            // 控制两个div的显示与隐藏
+            popBox.style.display = "block";
+            popLayer.style.display = "block";
+        }
+
+        function closePop(){
+            // 获取弹出窗口元素
+            let popDiv = document.getElementById("popDiv");
+
+            popDiv.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
